@@ -207,7 +207,7 @@ Mọi đóng góp, đề xuất tính năng mới và báo cáo lỗi đều r�
 
 ## 📄 Giấy phép (License)
 
-Dự án được phân phối dưới giấy phép mã nguồn mở **MIT License**. Xem chi tiết tại [LICENSE](LICENSE).
+Dự án được phân phối dưới giấy phép mã nguồn mở **CC BY-NC 4.0**. Xem chi tiết tại ([LICENSE](https://creativecommons.org/licenses/by-nc/4.0/deed.en)).
 
 ---
 
