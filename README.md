@@ -16,6 +16,8 @@
 **Remix Karaoke Video Maker** là một bộ công cụ sản xuất video âm nhạc và karaoke bán tự động mạnh mẽ chạy hoàn toàn trên trình duyệt. Ứng dụng kết hợp sức mạnh xử lý đồ họa **HTML5 Canvas 2D/3D**, phân tích tần số âm thanh thời gian thực (**Web Audio API FFT**), công nghệ mã hóa video phần cứng (**WebCodecs & MP4/WebM Muxer**) cùng trí tuệ nhân tạo **Gemini AI** để giúp các nhà sáng tạo nội dung nhanh chóng tạo ra các video âm nhạc chất lượng cao chuẩn định dạng **TikTok (9:16), YouTube (16:9), Instagram (1:1)**.
 
 ---
+<img width="1287" height="2048" alt="image" src="https://github.com/user-attachments/assets/ef35bb85-1f10-4468-afb6-858b84b63e47" />
+<img width="1295" height="3120" alt="image" src="https://github.com/user-attachments/assets/ddd97276-7308-4db5-9975-03c5d41de5b0" />
 
 ## ✨ Tính năng nổi bật
 
