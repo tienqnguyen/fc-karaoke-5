@@ -1,11 +1,23 @@
-<div align="center">
+# 🎤 Karaoke Studio V4: Professional Video Production Engine
 
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
+Karaoke Studio V4 is a high-performance, web-based production suite designed for content creators to generate professional-grade karaoke videos optimized for TikTok, Reels, and Shorts (9:16 aspect ratio). By combining advanced HTML5 Canvas rendering with synchronized lyric processing and AI-powered visual generation, it bridges the gap between simple lyric displays and studio-quality music videos.
 
-  <h1>Built with AI Studio</h2>
+## 🌟 Key Features
 
-  <p>The fastest path from prompt to production with Gemini.</p>
+### 🎬 Production & Rendering
+- **Real-time Canvas Rendering**: A high-fidelity 1080x1920 production environment.
+- **Studio-Grade Export**: Utilizes the MediaRecorder API to encode videos directly in the browser (WebM/VP9) with synchronized audio.
+- **Cinematic Motion**: Built-in background animations (Slow Zoom, Shift Pan) to add life to static images.
 
-  <a href="https://aistudio.google.com/apps">Start building</a>
+### 🎶 Audio & Synchronization
+- **LRC Parser**: Robust processing of `.lrc` files with millisecond precision.
+- **Audio Visualizer**: Real-time FFT (Fast Fourier Transform) waveform studio with multiple styles:
+  - **Bars**: Traditional frequency bars.
+  - **Reflected**: Symmetric reflected visualization.
+  - **Pulse**: Oscilloscope-style line waves.
+  - **Circles**: Expanding concentric rings reactive to bass/amplitude.
+- **Precise Controls**: Playback, scrubbing, and a dedicated "Studio Replay" button for timing checks.
 
-</div>
+### 🎨 Design Studio
+- **Advanced Typography**: Deep customization of fonts (Inter, Bebas Neue, Playfair, etc.), sizing, colors, and shadows.
+- **Karaoke High

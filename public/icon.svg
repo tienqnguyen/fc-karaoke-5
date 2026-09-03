@@ -1,0 +1,102 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="100%" height="100%">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0b0f19" />
+      <stop offset="50%" stop-color="#030712" />
+      <stop offset="100%" stop-color="#020617" />
+    </linearGradient>
+
+    <!-- Glowing Accent Gradient (Cyan to Fuchsia) -->
+    <linearGradient id="neonGlow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00f2fe" />
+      <stop offset="45%" stop-color="#38bdf8" />
+      <stop offset="80%" stop-color="#a855f7" />
+      <stop offset="100%" stop-color="#ec4899" />
+    </linearGradient>
+
+    <!-- EQ Bar Gradients -->
+    <linearGradient id="bar1" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" stop-color="#0284c7" />
+      <stop offset="100%" stop-color="#38bdf8" />
+    </linearGradient>
+    <linearGradient id="bar2" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" stop-color="#06b6d4" />
+      <stop offset="100%" stop-color="#22d3ee" />
+    </linearGradient>
+    <linearGradient id="bar3" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" stop-color="#8b5cf6" />
+      <stop offset="100%" stop-color="#c084fc" />
+    </linearGradient>
+    <linearGradient id="bar4" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" stop-color="#ec4899" />
+      <stop offset="100%" stop-color="#f472b6" />
+    </linearGradient>
+
+    <!-- Radial Glow behind Mic -->
+    <radialGradient id="centerAura" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.35" />
+      <stop offset="50%" stop-color="#a855f7" stop-opacity="0.18" />
+      <stop offset="100%" stop-color="#020617" stop-opacity="0" />
+    </radialGradient>
+
+    <!-- Shadow filter for depth -->
+    <filter id="neonDrop" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="8" stdDeviation="16" flood-color="#38bdf8" flood-opacity="0.45" />
+    </filter>
+  </defs>
+
+  <!-- Background Squircle -->
+  <rect width="512" height="512" rx="128" fill="url(#bgGrad)" />
+  <rect width="504" height="504" x="4" y="4" rx="124" fill="none" stroke="url(#neonGlow)" stroke-width="6" stroke-opacity="0.6" />
+
+  <!-- Ambient Glow -->
+  <circle cx="256" cy="256" r="190" fill="url(#centerAura)" />
+
+  <!-- Background Audio Equalizer Waves (Symmetric Modern Bars) -->
+  <g opacity="0.85">
+    <!-- Left Equalizer Bars -->
+    <rect x="76" y="270" width="16" height="56" rx="8" fill="url(#bar1)" opacity="0.6" />
+    <rect x="106" y="230" width="16" height="110" rx="8" fill="url(#bar2)" opacity="0.75" />
+    <rect x="136" y="180" width="16" height="180" rx="8" fill="url(#bar2)" />
+    <rect x="166" y="210" width="16" height="135" rx="8" fill="url(#bar3)" opacity="0.85" />
+    <rect x="196" y="150" width="16" height="230" rx="8" fill="url(#bar3)" />
+
+    <!-- Right Equalizer Bars -->
+    <rect x="300" y="150" width="16" height="230" rx="8" fill="url(#bar3)" />
+    <rect x="330" y="210" width="16" height="135" rx="8" fill="url(#bar4)" opacity="0.85" />
+    <rect x="360" y="180" width="16" height="180" rx="8" fill="url(#bar4)" />
+    <rect x="390" y="230" width="16" height="110" rx="8" fill="url(#bar4)" opacity="0.75" />
+    <rect x="420" y="270" width="16" height="56" rx="8" fill="url(#bar4)" opacity="0.6" />
+  </g>
+
+  <!-- Audio Wave Rings / Sound Beams -->
+  <path d="M 180 130 A 130 130 0 0 1 332 130" fill="none" stroke="#38bdf8" stroke-width="12" stroke-linecap="round" opacity="0.5" />
+  <path d="M 150 100 A 170 170 0 0 1 362 100" fill="none" stroke="#a855f7" stroke-width="8" stroke-linecap="round" opacity="0.4" stroke-dasharray="8 12" />
+
+  <!-- Center Microphone & Karaoke Star Icon -->
+  <g filter="url(#neonDrop)">
+    <!-- Mic Body Handle -->
+    <path d="M 238 270 L 238 316 C 238 326 246 334 256 334 C 266 334 274 326 274 316 L 274 270 Z" fill="#0f172a" stroke="#38bdf8" stroke-width="8" />
+    <line x1="256" y1="334" x2="256" y2="386" stroke="#38bdf8" stroke-width="10" stroke-linecap="round" />
+    <path d="M 220 386 L 292 386" stroke="#38bdf8" stroke-width="10" stroke-linecap="round" />
+
+    <!-- Mic Cradle Ring -->
+    <path d="M 204 220 C 204 286 308 286 308 220" fill="none" stroke="url(#neonGlow)" stroke-width="14" stroke-linecap="round" />
+
+    <!-- Mic Capsule / Capsule Head -->
+    <rect x="220" y="146" width="72" height="106" rx="36" fill="url(#neonGlow)" />
+    <!-- Capsule Metallic Pattern Lines -->
+    <line x1="220" y1="192" x2="292" y2="192" stroke="#030712" stroke-width="4" opacity="0.5" />
+    <line x1="220" y1="208" x2="292" y2="208" stroke="#030712" stroke-width="4" opacity="0.5" />
+    <line x1="256" y1="150" x2="256" y2="246" stroke="#ffffff" stroke-width="3" opacity="0.4" />
+  </g>
+
+  <!-- Dynamic Sparkle Stars -->
+  <!-- Top Right 4-Point Star -->
+  <path d="M 380 120 Q 380 144 404 144 Q 380 144 380 168 Q 380 144 356 144 Q 380 144 380 120 Z" fill="#22d3ee" opacity="0.9" />
+  <!-- Top Left Small Star -->
+  <path d="M 128 150 Q 128 164 142 164 Q 128 164 128 178 Q 128 164 114 164 Q 128 164 128 150 Z" fill="#f472b6" opacity="0.85" />
+  <!-- Bottom Right Small Star -->
+  <path d="M 374 370 Q 374 380 384 380 Q 374 380 374 390 Q 374 380 364 380 Q 374 380 374 370 Z" fill="#c084fc" opacity="0.75" />
+</svg>

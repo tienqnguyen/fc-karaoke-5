@@ -1,0 +1,8 @@
+{
+  "name": " Karaoke Video Maker -public",
+  "description": "Create professional karaoke-style TikTok videos by combining MP3 audio, LRC lyrics, and background images with AI-powered background generation.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
